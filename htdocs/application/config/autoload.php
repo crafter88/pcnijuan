@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('database', 'session');
+$autoload['libraries'] = array('database', 'session', 'email');
 
 /*
 | -------------------------------------------------------------------
@@ -72,12 +72,6 @@ $autoload['libraries'] = array('database', 'session');
 | Prototype:
 |
 |	$autoload['drivers'] = array('cache');
-|
-| You can also supply an alternative property name to be assigned in
-| the controller:
-|
-|	$autoload['drivers'] = array('cache' => 'cch');
-|
 */
 $autoload['drivers'] = array();
 
@@ -132,7 +126,46 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array(
-							'Products_Model' => 'Products_Model',
-							'Login_Model' => 'Login_Model',
-						);
+$autoload['model'] = array('Banks_Model',
+                           'Business_Partners_Class_Model',
+                           'Business_Partners_Type_Model',
+                           'CB_Br_Model',
+                           'Co_Banks_Model',
+                           'Co_Business_Partners_Model',
+                           'Co_Departments_Model',
+                           'Co_Discounts_Model',
+                           'Co_Documents_Model',
+                           'Co_Journals_Model',
+                           'Co_Modes_Of_Payment_Model',
+                           'Co_Others_Model',
+                           'Co_Products_Model',
+                           'Co_Profit_Cost_Centers_Model',
+                           'Co_Services_Model',
+                           'Co_Tax_Types_Model',
+                           'Co_Taxes_Model',
+                           'Co_Types_Of_Payment_Model',
+                           'Company_Branches_Model',
+                           'Discounts_Model',
+                           'Documents_Model',
+                           'Modes_Of_Payment_Model',
+                           'P_CB_Model',
+                           'Profiles_Model',
+                           'Tax_Types_Model',
+                           'Taxes_Model',
+                           'Types_Of_Payment_Model',
+                           'Users_Model',
+                           'Setup_Model',
+                           'Subscribe_Model',
+                           'Sales_Model',
+                           'Receipts_Model',
+                           'Collections_Model',
+                           'Purchases_Model',
+                           'Disbursements_Model',
+                           'General_Model',
+                           'Specials_Model',
+                           'Transactions_Model',
+						         'Journals_Model',
+                           'Co_COA_Model',
+                           'COA_Model',
+                           'Co_Users_Model'
+                           );
